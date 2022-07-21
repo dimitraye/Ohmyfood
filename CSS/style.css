@@ -1,0 +1,55 @@
+html{
+
+}
+
+body{
+
+}
+
+header{
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+}
+
+.entete{
+    background-color: ;
+    margin-top: -10px;
+}
+
+.divLogo{
+    background-color: white;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+    align-items: center;
+}
+.divLogo img{
+    justify-content: center;
+    height: 35px;
+    width: 150px;
+}
+
+.divLocation{
+    background-color: lightgray;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+    display: flex;
+}
+
+.exploreButton{
+    background-color: purple;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+.exploreButton p{
+    padding: 5px;
+}
+
+.divSansHeaderFooter{
+    padding: 20px;
+}
