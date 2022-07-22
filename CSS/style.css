@@ -5,37 +5,76 @@ html{
 body{
 
 }
-
+/*_________blocPage_________*/
+/*_________entete_________*/
+.entete{
+    margin-top: -12px;
+}
+/*_________header_________*/
 header{
     margin-left: -10px;
     margin-right: -10px;
+    height: 300px;
     padding: 10px;
+    background-color: #f2f2f2;
 }
-
-.entete{
-    background-color: ;
-    margin-top: -10px;
-}
-
+/*_________divLogo_________*/
 .divLogo{
     background-color: white;
     margin-left: -10px;
     margin-right: -10px;
+    margin-top: -5px;
     padding: 10px;
-    align-items: center;
+    transition: 0.3s;
+    border-radius: 10px 10px 10px 10px;
+
 }
 .divLogo img{
     justify-content: center;
     height: 35px;
     width: 150px;
+    display: block;
+    margin-left: 120px;
+
 }
 
+/*_________divLocation_________*/
 .divLocation{
     background-color: lightgray;
+    height: 30px;
     margin-left: -10px;
     margin-right: -10px;
     padding: 10px;
     display: flex;
+    padding-left: 120px;
+    font-size: 15px;
+}
+
+.divLocation i{
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    margin-right: 10px;
+}
+
+.divLocation p{
+    border: 1px solid black;
+
+}
+/*_________Introduction_________*/
+.Introduction h2{
+    margin-left: 75px;
+    border: 1px solid black;
+    width: 250px;
+    text-align: center;
+}
+
+.phrase p{
+    margin-left: 75px;
+    border: 1px solid black;
+    width: 250px;
+    text-align: center;
 }
 
 .exploreButton{
@@ -44,12 +83,55 @@ header{
     height: 30px;
     width: 250px;
     text-align: center;
+    margin-left: 70px;
 }
 
 .exploreButton p{
     padding: 5px;
 }
-
+/*_________divSansHeaderFooter_________*/
 .divSansHeaderFooter{
     padding: 20px;
+}
+/*_________fonctionnement_________*/
+.fonctionnement{
+    display: block;
+}
+/*_________choix1_________*/
+.choix1 {
+    
+    border: 1px solid red;
+}
+/*_________number1_________*/
+.number1{
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+/*_________descChoix1_________*/
+.descChoix1 i{
+    margin-bottom: 5px;
+    border : 1px solid black; 
+}
+
+.descChoix1 p{
+    border: 1px solid blue;
+}
+/*_________blocPage_________*/
+
+
+
+
+/*______________FOOTER_______________*/
+
+footer{
+    background-color: darkgray;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 0;
+
+}
+
+footer img{
+    height: 25px;
+    width: 100px;
 }
