@@ -6,6 +6,11 @@ body{
 
 }
 /*_________blocPage_________*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------ENTETE------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
 /*_________entete_________*/
 .entete{
     margin-top: -12px;
@@ -85,10 +90,20 @@ header{
 .exploreButton p{
     padding: 5px;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------DIV SANS HEADER NI FOOTER------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
 /*_________divSansHeaderFooter_________*/
 .divSansHeaderFooter{
     padding: 20px;
 }
+
+/*--------------------------------------------------------------------*/
+/*--------------------------- FONCTIONNEMENT -------------------------*/
+/*--------------------------------------------------------------------*/
 /*_________fonctionnement_________*/
 .fonctionnement{
     display: block;
@@ -149,7 +164,7 @@ header{
     margin-bottom: 20px;
 }
 
-/*_________number1_________*/
+/*_________number2_________*/
 .number2{
     border: 1px solid black;
     border-radius: 15px 15px 15px 15px;
@@ -164,7 +179,7 @@ header{
 .number2 p{
     margin: 0;
 }
-/*_________descChoix1_________*/
+/*_________descChoix2_________*/
 .descChoix2{
     border: 1px solid green;
     background-color: lightgrey;
@@ -194,7 +209,7 @@ header{
     height: auto;
     justify-content: center;
 }
-/*_________number1_________*/
+/*_________number3_________*/
 .number3{
     border: 1px solid black;
     border-radius: 15px 15px 15px 15px;
@@ -209,7 +224,7 @@ header{
 .number3 p{
     margin: 0;
 }
-/*_________descChoix1_________*/
+/*_________descChoix3_________*/
 .descChoix3{
     border: 1px solid green;
     background-color: lightgrey;
@@ -232,6 +247,46 @@ header{
     border: 1px solid blue;
     width: 180px;
 }
+
+/*--------------------------------------------------------------------*/
+/*----------------------------- RESTAURANTS --------------------------*/
+/*--------------------------------------------------------------------*/
+/*_________ restaurants _________*/
+.restaurants{
+    display: block;
+}
+/*_________ cardRestaurants1 _________*/
+.cardRestaurants1{
+    border: 1px solid red ;
+    width: 90%;
+}
+/*_________ cardRestaurantsImage _________*/
+.cardRestaurantsImage{
+    height: 165px;
+    width: 359px;
+}
+.cardRestaurantsImage img{
+    height: 165px;
+    width: 359px;
+}
+/*_________ cardRestaurantsInfos _________*/
+.cardRestaurantsInfos{
+    border: 1px solid blue;
+    display: flex;
+}
+/*_________ infoCard _________*/
+.infoCard{
+    border: 1px solid green;
+    width: 90%;
+}
+/*_________ divHeart _________*/
+.divHeart{
+    border: 1px solid purple;
+    width: 10%;
+}
+/*_________ blocPage _________*/
+
+
 /*_________blocPage_________*/
 
 
@@ -251,3 +306,9 @@ footer img{
     height: 25px;
     width: 100px;
 }
+
+footer h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+}
+
