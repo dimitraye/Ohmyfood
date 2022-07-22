@@ -5,7 +5,12 @@ html{
 body{
 
 }
-/*_________blocPage_________*/
+
+p{
+        font-family: 'Roboto', sans-serif;
+}
+/*_________ blocPage _________*/
+
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------ENTETE------------------------------------------*/
@@ -48,10 +53,11 @@ header{
     height: 30px;
     margin-left: -10px;
     margin-right: -10px;
-    padding: 10px;
+    padding-bottom: 10px;
     display: flex;
     padding-left: 120px;
     font-size: 15px;
+
 }
 
 .divLocation i{
@@ -85,6 +91,7 @@ header{
     width: 250px;
     text-align: center;
     margin-left: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .exploreButton p{
@@ -97,7 +104,7 @@ header{
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
 /*_________divSansHeaderFooter_________*/
-.divSansHeaderFooter{
+.globalSansHeaderFooter{
     padding: 20px;
 }
 
@@ -110,8 +117,6 @@ header{
 }
 /*_________choix1_________*/
 .choix1 {
-    
-    border: 1px solid red;
     display: flex;
     height: auto;
     justify-content: center;
@@ -119,7 +124,6 @@ header{
 }
 /*_________number1_________*/
 .number1{
-    border: 1px solid black;
     border-radius: 15px 15px 15px 15px;
     height: 25px;
     width: 25px;
@@ -134,30 +138,25 @@ header{
 }
 /*_________descChoix1_________*/
 .descChoix1{
-    border: 1px solid green;
     background-color: lightgrey;
     display: flex;
     border-radius: 15px;
     width: 350px;
-
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .descChoix1 i{
     padding-top: 17px;
     padding-right: 10px;
     margin-left: 30px;
     padding-bottom: 0;
-    border : 1px solid black; 
 }
 
 .descChoix1 p{
-    border: 1px solid blue;
     width: 180px;
 }
 
 
 .choix2 {
-    
-    border: 1px solid red;
     display: flex;
     height: auto;
     justify-content: center;
@@ -166,7 +165,6 @@ header{
 
 /*_________number2_________*/
 .number2{
-    border: 1px solid black;
     border-radius: 15px 15px 15px 15px;
     height: 25px;
     width: 25px;
@@ -181,37 +179,32 @@ header{
 }
 /*_________descChoix2_________*/
 .descChoix2{
-    border: 1px solid green;
     background-color: lightgrey;
     display: flex;
     border-radius: 15px;
     width: 350px;
-
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .descChoix2 i{
     padding-top: 17px;
     padding-right: 10px;
     margin-left: 30px;
     padding-bottom: 0;
-    border : 1px solid black; 
 }
 
 .descChoix2 p{
-    border: 1px solid blue;
     width: 180px;
 }
 
 
 .choix3 {
     
-    border: 1px solid red;
     display: flex;
     height: auto;
     justify-content: center;
 }
 /*_________number3_________*/
 .number3{
-    border: 1px solid black;
     border-radius: 15px 15px 15px 15px;
     height: 25px;
     width: 25px;
@@ -226,25 +219,21 @@ header{
 }
 /*_________descChoix3_________*/
 .descChoix3{
-    border: 1px solid green;
     background-color: lightgrey;
     display: flex;
     border-radius: 15px;
     width: 350px;
-
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .descChoix3 i{
     padding-top: 17px;
     padding-right: 10px;
     margin-left: 30px;
     padding-bottom: 0;
-    border : 1px solid black; 
     color: #9356DC;
-
 }
 
 .descChoix3 p{
-    border: 1px solid blue;
     width: 180px;
 }
 
@@ -257,37 +246,58 @@ header{
 }
 /*_________ cardRestaurants1 _________*/
 .cardRestaurants1{
-    border: 1px solid red ;
-    width: 90%;
+    width: 348px;
+
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 /*_________ cardRestaurantsImage _________*/
 .cardRestaurantsImage{
     height: 165px;
-    width: 359px;
+    width: 348px;
+    border-radius: 10px 10px 0 0;
 }
 .cardRestaurantsImage img{
     height: 165px;
-    width: 359px;
+    width: 348px;
+    border-radius: 10px 10px 0 0;
 }
 /*_________ cardRestaurantsInfos _________*/
 .cardRestaurantsInfos{
-    border: 1px solid blue;
     display: flex;
+    width: 348px;
+    border-radius: 0 0 10px 10px;
+    padding-left: 0px;
 }
 /*_________ infoCard _________*/
 .infoCard{
-    border: 1px solid green;
-    width: 90%;
+    width: 85%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+}
+
+.infoCard p{
 }
 /*_________ divHeart _________*/
 .divHeart{
-    border: 1px solid purple;
-    width: 10%;
+    width: 15%;
+    border-radius: 0 0 10px 0;
+    padding-left: 25px;
+    padding-top: 25px;
 }
-/*_________ blocPage _________*/
 
+.divHeart i{
+    font-size: 25px;
+    
+}
+/*_________ p1 _________*/
+.p1{
+    margin-bottom: -10px;
+}
 
-/*_________blocPage_________*/
+/*_________ p2 _________*/
 
 
 
@@ -295,20 +305,29 @@ header{
 /*______________FOOTER_______________*/
 
 footer{
-    background-color: darkgray;
+    background-color: rgba(13, 11, 11, 0.864);
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: 0;
-
-}
-
-footer img{
-    height: 25px;
-    width: 100px;
+    text-decoration-color: white;
+    padding-left: 25px;
 }
 
 footer h2{
     font-family: 'Shrikhand', cursive;
     font-size: 20px;
+    color: white;
+}
+
+.ohmyfood{
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+}
+
+
+
+.ohmyfood div{
+    color: white;
 }
 
