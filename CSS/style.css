@@ -1,13 +1,9 @@
-html{
-
-}
-
-body{
-
-}
-
 p{
         font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
 /*_________ blocPage _________*/
 
