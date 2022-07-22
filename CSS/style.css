@@ -99,18 +99,20 @@ header{
     border: 1px solid red;
     display: flex;
     height: auto;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 /*_________number1_________*/
 .number1{
     border: 1px solid black;
-    border-radius: 10px 10px 10px 10px;
-    height: 20px;
-    width: 20px;
+    border-radius: 15px 15px 15px 15px;
+    height: 25px;
+    width: 25px;
     margin-top: 15px;
-    margin-right: -13px;
+    margin-right: -15px;
     text-align: center;
     justify-content: center;
-
+    background-color: #9356DC;
 }
 .number1 p{
     margin: 0;
@@ -121,16 +123,112 @@ header{
     background-color: lightgrey;
     display: flex;
     border-radius: 15px;
+    width: 350px;
+
 }
 .descChoix1 i{
     padding-top: 17px;
     padding-right: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
     padding-bottom: 0;
     border : 1px solid black; 
 }
 
 .descChoix1 p{
+    border: 1px solid blue;
+    width: 180px;
+}
+
+
+.choix2 {
+    
+    border: 1px solid red;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/*_________number1_________*/
+.number2{
+    border: 1px solid black;
+    border-radius: 15px 15px 15px 15px;
+    height: 25px;
+    width: 25px;
+    margin-top: 15px;
+    margin-right: -15px;
+    text-align: center;
+    justify-content: center;
+    background-color: #9356DC;
+}
+.number2 p{
+    margin: 0;
+}
+/*_________descChoix1_________*/
+.descChoix2{
+    border: 1px solid green;
+    background-color: lightgrey;
+    display: flex;
+    border-radius: 15px;
+    width: 350px;
+
+}
+.descChoix2 i{
+    padding-top: 17px;
+    padding-right: 10px;
+    margin-left: 30px;
+    padding-bottom: 0;
+    border : 1px solid black; 
+}
+
+.descChoix2 p{
+    border: 1px solid blue;
+    width: 180px;
+}
+
+
+.choix3 {
+    
+    border: 1px solid red;
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+/*_________number1_________*/
+.number3{
+    border: 1px solid black;
+    border-radius: 15px 15px 15px 15px;
+    height: 25px;
+    width: 25px;
+    margin-top: 15px;
+    margin-right: -15px;
+    text-align: center;
+    justify-content: center;
+    background-color: #9356DC;
+}
+.number3 p{
+    margin: 0;
+}
+/*_________descChoix1_________*/
+.descChoix3{
+    border: 1px solid green;
+    background-color: lightgrey;
+    display: flex;
+    border-radius: 15px;
+    width: 350px;
+
+}
+.descChoix3 i{
+    padding-top: 17px;
+    padding-right: 10px;
+    margin-left: 30px;
+    padding-bottom: 0;
+    border : 1px solid black; 
+    color: #9356DC;
+
+}
+
+.descChoix3 p{
     border: 1px solid blue;
     width: 180px;
 }
