@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 p{
         font-family: 'Roboto', sans-serif;
 }
@@ -15,24 +19,16 @@ a{
 /*-----------------------------------------------------------------------------------*/
 /*_________entete_________*/
 .entete{
-    margin-top: -12px;
+width: 100%;
+height: 40px;
+
 }
-/*_________header_________*/
-header{
-    margin-left: -10px;
-    margin-right: -10px;
-    height: 300px;
-    padding: 10px;
-    background-color: #f2f2f2;
-}
+
+   
 /*_________divLogo_________*/
 .divLogo{
-    background-color: white;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -5px;
-    padding: 10px;
-
+    height: 40px;
+    display: flex;
 }
 .divLogo img{
     justify-content: center;
@@ -43,45 +39,74 @@ header{
 
 }
 
+.divFlecheEntete{
+    width: 25%;
+    margin-left: -10px;
+}
+.divFlecheEntete a{
+    text-decoration: none;
+}
+.divFlecheEntete i{
+    margin-left: 25px;
+    margin-top: 3px;
+    font-size: 40px;
+    
+
+}
+
+.logo{
+    width: 75%;
+}
+.logo img{
+    justify-content: center;
+    height: 35px;
+    width: 150px;
+    display: block;
+    margin-left: 55px;
+
+}
+
 /*_________divLocation_________*/
 .divLocation{
     border-top: 3px solid dimgrey;
     background-color: lightgray;
-    height: 30px;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-bottom: 10px;
+    height: 50px;
+    margin-bottom: 0;
+
     display: flex;
-    padding-left: 120px;
     font-size: 15px;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .divLocation i{
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .divLocation p{
 
 }
 /*_________Introduction_________*/
+.introduction {
+    height: 250px;
+    background-color: #f2f2f2;
+    width: 100%;
+
+}
 .Introduction h2{
-    margin-left: 75px;
-    width: 250px;
-    text-align: center;
+    
 }
 
-.phrase p{
-    margin-left: 75px;
-    width: 250px;
+.reservezPhrase {
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .exploreButton{
     background-color: purple;
+    color: white;
     border-radius: 10px;
     height: 30px;
     width: 250px;
@@ -101,7 +126,6 @@ header{
 /*-----------------------------------------------------------------------------------*/
 /*_________divSansHeaderFooter_________*/
 .globalSansHeaderFooter{
-    padding: 20px;
 }
 
 /*--------------------------------------------------------------------*/
@@ -165,7 +189,6 @@ header{
     margin-right: 4%;
     text-align: center;
 }
-.iconFonc{
     width: 15%;
 }
 .textFonc{
@@ -353,8 +376,6 @@ header{
 
 footer{
     background-color: rgba(13, 11, 11, 0.864);
-    margin-left: -8px;
-    margin-right: -8px;
     margin-bottom: 0;
     text-decoration-color: white;
     padding-left: 25px;
