@@ -11,7 +11,7 @@ $greenSpe : #99E2D0;
 $hoverChoixColor : #eadafd;
 
 
-/*ACCUEIL.HTML*/
+/*ACCUEIL.HTML /  MENU*/
 .divHeader{
     height: 40px;
     display: flex;
@@ -27,4 +27,21 @@ $hoverChoixColor : #eadafd;
     height: 35px;
     width: 150px;
 }
+/*ACCUEIL.HTML /  MENU*/
 
+
+/*DIVLOCATION*/
+.divLocation{
+    border-top: 3px solid dimgrey;
+    background-color: lightgray;
+    height: 50px;
+    margin-bottom: 0;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divLocation i{
+    margin-right: 15px;
+}

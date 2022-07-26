@@ -74,20 +74,7 @@ a{
 
 /*---------------------------------------------------------*/
 /*_________divLocation_________*/
-.divLocation{
-    border-top: 3px solid dimgrey;
-    background-color: lightgray;
-    height: 50px;
-    margin-bottom: 0;
-    display: flex;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-}
 
-.divLocation i{
-    margin-right: 15px;
-}
 
 /*-----------------------------------------------------------------------------------*/
 /*_________ Introduction _________*/

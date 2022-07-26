@@ -1,5 +1,5 @@
 /*Colors*/
-/*ACCUEIL.HTML*/
+/*ACCUEIL.HTML /  MENU*/
 .divHeader {
   height: 40px;
   display: flex;
@@ -14,4 +14,21 @@
 .divLogo img {
   height: 35px;
   width: 150px;
+}
+
+/*ACCUEIL.HTML /  MENU*/
+/*DIVLOCATION*/
+.divLocation {
+  border-top: 3px solid dimgrey;
+  background-color: lightgray;
+  height: 50px;
+  margin-bottom: 0;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.divLocation i {
+  margin-right: 15px;
 }/*# sourceMappingURL=index.css.map */
