@@ -94,68 +94,7 @@ a{
 
 
 /*--------------------------------------------------------------------*/
-/*_________ restaurants _________*/
-.restaurants{
-    display: block;
-}
-.cardRestaurants1{
-    width: 348px;
 
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-/*_________ cardRestaurantsImage _________*/
-.cardRestaurantsImage{
-    height: 165px;
-    width: 348px;
-    border-radius: 10px 10px 0 0;
-}
-.cardRestaurantsImage img{
-    height: 165px;
-    width: 348px;
-    border-radius: 10px 10px 0 0;
-    position:relative;
-
-}
-/*_________ nouveau _________*/
-.nouveau{
-    font-size: 13px;
-    background-color: #99E2D0;
-    color: green;
-    position: absolute;
-    margin-top: -160px;
-    margin-left: 275px;
-    padding: 5px;
-    border-radius: 2px;
-}
-/*_________ cardRestaurantsInfos _________*/
-.cardRestaurantsInfos{
-    display: flex;
-    width: 348px;
-    border-radius: 0 0 10px 10px;
-    padding-left: 0px;
-}
-/*_________ infoCard _________*/
-.infoCard{
-    width: 85%;
-    padding-bottom: 5px;
-    padding-left: 10px;
-}
-/*_________ divHeart _________*/
-.divHeart{
-    width: 15%;
-    border-radius: 0 0 10px 0;
-    padding-left: 25px;
-    padding-top: 25px;
-}
-.divHeart i{
-    font-size: 25px;   
-}
-/*_________ p1 _________*/
-.p1{
-    margin-bottom: -10px;
-}
 
 
 
