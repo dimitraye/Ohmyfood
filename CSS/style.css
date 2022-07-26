@@ -56,20 +56,7 @@ a{
 
 /*---------------------------------------------------------*/
 /*_________divLogo_________*/
-.divHeader{
-    height: 40px;
-    display: flex;
-}
-.divLogo{
-    height: 40px;
-    width: 70%;
-    display: flex;
-    align-items: center;
-}
-.divLogo img{
-    height: 35px;
-    width: 150px;
-}
+
 
 
 .divFlecheEntete{

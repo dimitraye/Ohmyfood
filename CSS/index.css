@@ -1,0 +1,17 @@
+/*Colors*/
+/*ACCUEIL.HTML*/
+.divHeader {
+  height: 40px;
+  display: flex;
+}
+.divHeader .divLogo {
+  height: 40px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.divLogo img {
+  height: 35px;
+  width: 150px;
+}/*# sourceMappingURL=index.css.map */
