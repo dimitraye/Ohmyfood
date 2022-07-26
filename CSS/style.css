@@ -110,29 +110,7 @@ a{
 
 
 /*-----------------------------------------------------------------------------------*/
-/*______________FOOTER_______________*/
-footer{
-    background-color: rgba(13, 11, 11, 0.864);
-    margin-bottom: 0;
-    text-decoration-color: white;
-    padding-left: 25px;
-}
-footer h2{
-    font-family: 'Shrikhand', cursive;
-    font-size: 20px;
-    color: white;
-}
-.ohmyfoodFooter{
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
-.ohmyfoodFooter div{
-    color: white;
-}
-.ohmyfoodFooter div:hover{
-    color: #9356DC;
-    cursor: pointer;
-}
+
 
   
 

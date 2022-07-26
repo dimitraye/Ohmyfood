@@ -185,8 +185,8 @@ $hoverChoixColor : #eadafd;
 
 .nouveau{
     font-size: 13px;
-    background-color: #99E2D0;
-    color: green;
+    background-color: $greenSpe;
+    color: $green;
     position: absolute;
     margin-top: -160px;
     margin-left: 275px;
@@ -194,6 +194,32 @@ $hoverChoixColor : #eadafd;
     border-radius: 2px;
 }
 /*RESTAURANTS*/
+
+/*FOOTER*/
+footer{
+    background-color: rgba(13, 11, 11, 0.864);
+    margin-bottom: 0;
+    text-decoration-color: $blanc;
+    padding-left: 25px;
+    h2{
+        font-family: 'Shrikhand', cursive;
+        font-size: 20px;
+        color: $blanc;
+    }
+    .ohmyfoodFooter{
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .ohmyfoodFooter div{
+        color: $blanc;
+    }
+    .ohmyfoodFooter div:hover{
+        color: $violetSpe;
+        cursor: pointer;
+    }
+}
+ 
+
 
 
 

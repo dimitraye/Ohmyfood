@@ -183,4 +183,28 @@
   border-radius: 2px;
 }
 
-/*RESTAURANTS*//*# sourceMappingURL=index.css.map */
+/*RESTAURANTS*/
+/*FOOTER*/
+footer {
+  background-color: rgba(13, 11, 11, 0.864);
+  margin-bottom: 0;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  padding-left: 25px;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  color: white;
+}
+footer .ohmyfoodFooter {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+footer .ohmyfoodFooter div {
+  color: white;
+}
+footer .ohmyfoodFooter div:hover {
+  color: #9356DC;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */
