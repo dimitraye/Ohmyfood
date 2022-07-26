@@ -89,62 +89,7 @@ a{
 
 
 /*--------------------------------------------------------------------*/
-/*_________fonctionnement_________*/
-.fonctionnement{
-    height: 460px ;
-}
 
-/*_________ listChoix _________*/
-.listChoix{
-    width: 95%;   
-}
-.choix{
-    width: 100%;
-    height: 80px;
-    background-color: #f2f2f2;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    position:relative;
-    z-index: 0;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-.choix i{
-    color: grey;
-}
-.choix:hover{
-    background-color: #eadafd;
-}
-
-.choix:hover .iconFonc{
-    color: #9356DC;
-}
-.numberFonc{
-    width: 25px;
-    height: 25px;
-    border-radius: 50px;
-    background-color: #9356DC;
-    color : white;
-    margin-left: -5%;
-    text-align: center;
-    margin-right: 6%;
-}
-
-.iconFonc{
-    width: 10%;
-
-}
-.space{
-    width: 3%;
-
-}
-.textFonc{
-    width: 77%;
-    font-weight: bold;
-    font-size: 18px;
-
-}
 
 
 
