@@ -32,8 +32,8 @@ $hoverChoixColor : #eadafd;
 
 /*DIVLOCATION*/
 .divLocation{
-    border-top: 3px solid dimgrey;
-    background-color: lightgray;
+    border-top: 3px solid $darkgrey2;
+    background-color: $grey2;
     height: 50px;
     margin-bottom: 0;
     display: flex;
@@ -45,3 +45,41 @@ $hoverChoixColor : #eadafd;
 .divLocation i{
     margin-right: 15px;
 }
+/*DIVLOCATION*/
+
+/*INTRODUCTION*/
+.introduction {
+    height: 250px;
+    background-color: $gris;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/*_________ reservezPhrase _________*/
+.reservezPhrase {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    .reservezPhrase h2{
+        margin-left: 20px;
+        margin-right: 20px;   
+    }
+}
+/*_________ exploreButton _________*/
+.exploreButton{
+    background-color: $violet;
+    border-radius: 25px;
+    height: 50px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);   
+}
+.exploreButton a{
+    color: $blanc;
+}
+/*INTRODUCTION*/
+
+
+
