@@ -9,7 +9,6 @@
   margin-bottom: 20px;
   margin-left: 3%;
   cursor: pointer;
-  transition: 2s;
 }
 .plat:hover .divValid {
   border: 1px solid purple;
