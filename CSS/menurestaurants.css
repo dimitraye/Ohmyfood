@@ -37,6 +37,58 @@
 }
 
 /*_________ divPlat _________*/
+.plat{
+    border: 1px solid black;
+    height: 70px;
+    width: 95%;
+    display: flex;
+}
+
+.partRouge{
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+}
+
+.divValid{
+    border: 1px solid purple;
+    height: 100%;
+    width: 20%;
+    display: none;
+}
+
+.divTitlePlat{
+    border: 1px solid orangered;
+    height: 50%;
+    width: 100%;  
+    padding-left: 2%;
+}
+.divTitlePlat h3{
+    font-size: 20px;    
+    margin-top: 0;
+}
+
+.divInfoPlat{
+    border: 1px solid blue;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divDescPlat{
+    border: 1px solid green;
+    height: 100%;
+    width: 80%;
+    padding-left: 2%;
+}
+
+.divPricePlat{
+    border: 1px solid yellow;
+    height: 100%;
+    width: 20%;
+}
+/*
 .divPlat h2{
     font-style: italic;
     margin-left: 20px;
@@ -82,6 +134,7 @@
     margin-left: 80px;
 }
 
+*/
 
 /*_________ Commander _________*/
 .divCommander{
