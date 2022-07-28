@@ -1,3 +1,14 @@
+.divValid {
+  display: none;
+  border: 1px solid purple;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+
 .plat {
   border: 1px solid black;
   height: 70px;
@@ -11,13 +22,7 @@
   cursor: pointer;
 }
 .plat:hover .divValid {
-  border: 1px solid purple;
-  background-color: #99E2D0;
-  border-radius: 0 20px 20px 0;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 20%;
+  display: block;
 }
 
 .partRouge {
