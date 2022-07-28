@@ -70,8 +70,8 @@
     border-top: 16px solid #3498db;
 
 
-    -webkit-animation: spin-loader 3s linear 1 forwards;
-    animation: spin-loader 3s linear 1 forwards;
+    -webkit-animation: spin-loader 1s linear 3 forwards;
+    animation: spin-loader 1s linear 3 forwards;
     -webkit-transform: rotate(45deg);
     transform:  rotate(45deg);
   }
