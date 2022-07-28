@@ -23,7 +23,14 @@
     z-index: 999;
     margin-top: -40px; 
 }
-
+/*divHEART*/
+.divHeart{
+    margin-right: 50px;
+    padding-top: 25px;
+}
+.divHeart i{
+    font-size: 30px;
+}
 /*_________ title _________*/
 .title h1{
     padding-left: 20px;
