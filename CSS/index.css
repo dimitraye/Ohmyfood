@@ -162,7 +162,6 @@ h1, h2, h3, h4, h5 {
 /*_________ exploreButton _________*/
 .exploreButton {
   border: none;
-  border: 1px solid red;
   height: 50px;
   width: 250px;
   justify-content: center;
@@ -183,7 +182,6 @@ h1, h2, h3, h4, h5 {
 
 .exploreButton a {
   color: white;
-  border: 1px solid red;
   margin: 0;
 }
 
@@ -263,6 +261,17 @@ h1, h2, h3, h4, h5 {
   width: 348px;
   border-radius: 0 0 10px 10px;
   padding-left: 0px;
+  /*
+  .divHeart{
+      width: 15%;
+      border-radius: 0 0 10px 0;
+      padding-left: 25px;
+      padding-top: 25px;
+  }
+  .divHeart i{
+      font-size: 25px;   
+  }
+  */
 }
 .restaurants .cardRestaurants1 .cardRestaurantsInfos .infoCard {
   width: 85%;
@@ -271,15 +280,6 @@ h1, h2, h3, h4, h5 {
 }
 .restaurants .cardRestaurants1 .cardRestaurantsInfos .infoCard .p1 {
   margin-bottom: -10px;
-}
-.restaurants .cardRestaurants1 .cardRestaurantsInfos .divHeart {
-  width: 15%;
-  border-radius: 0 0 10px 0;
-  padding-left: 25px;
-  padding-top: 25px;
-}
-.restaurants .cardRestaurants1 .cardRestaurantsInfos .divHeart i {
-  font-size: 25px;
 }
 
 .cardRestaurantsImage img {
@@ -321,9 +321,13 @@ footer .ohmyfoodFooter {
 footer .ohmyfoodFooter div {
   color: white;
 }
-footer .ohmyfoodFooter div:hover {
+footer .ohmyfoodFooter div:hover, footer a:hover {
   color: #9356DC;
   cursor: pointer;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 /*----------------------Menu restaurant------------------------*/
@@ -352,4 +356,50 @@ footer .ohmyfoodFooter div:hover {
   height: 200px;
 }
 
-/*--------------------------------------------------------------------------------------------*//*# sourceMappingURL=index.css.map */
+/*--------------------------------------------------------------------------------------------*/
+/*ANIM HEART*/
+.divHeart svg {
+  height: 25px;
+  width: 25px;
+}
+
+.heartFill {
+  display: none;
+}
+
+.divHeart:hover > .heartEmpty {
+  display: none;
+}
+
+.divHeart:hover > .heartFill {
+  display: block;
+}
+
+.divHeart:hover > .heartFill svg g {
+  animation: fill-in 3s forwards;
+  -webkit-animation: fill-in 3s forwards;
+  fill-opacity: 0;
+}
+
+.heartFill svg g {
+  fill: url(#mygradient);
+}
+
+@-webkit-keyframes fill-in {
+  0% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes fill-in {
+  0% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+/*ANIM HEART*//*# sourceMappingURL=index.css.map */

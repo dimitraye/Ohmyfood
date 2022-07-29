@@ -169,7 +169,6 @@ h1, h2, h3,h4,h5{
 /*_________ exploreButton _________*/
 .exploreButton {
   border: none;
-  border: 1px solid red;
   height: 50px;
   width: 250px;
   justify-content: center;
@@ -200,7 +199,6 @@ h1, h2, h3,h4,h5{
 
 .exploreButton a{
     color: white;
-    border: 1px solid red;
     margin: 0;
 }
 /*INTRODUCTION*/
@@ -288,6 +286,7 @@ h1, h2, h3,h4,h5{
                     margin-bottom: -10px;
                 }
             }
+            /*
             .divHeart{
                 width: 15%;
                 border-radius: 0 0 10px 0;
@@ -297,6 +296,7 @@ h1, h2, h3,h4,h5{
             .divHeart i{
                 font-size: 25px;   
             }
+            */
         }
     }
 }
@@ -337,10 +337,15 @@ footer{
     .ohmyfoodFooter div{
         color: $blanc;
     }
-    .ohmyfoodFooter div:hover{
+    .ohmyfoodFooter div:hover, a:hover{
         color: $violetSpe;
         cursor: pointer;
     }
+    a{
+        text-decoration: none;
+        color: $blanc;
+    }
+    
 }
  
 
@@ -374,3 +379,50 @@ footer{
 
 
 /*--------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*ANIM HEART*/
+.divHeart svg{
+    height: 25px;
+    width: 25px;
+  }
+  
+  .heartFill{
+    display: none;
+  }
+  
+  .divHeart:hover > .heartEmpty{
+    display: none;
+  }
+  
+  .divHeart:hover > .heartFill{
+    display: block;
+  }
+  
+  .divHeart:hover > .heartFill svg g{
+    animation: fill-in 3s forwards;
+    -webkit-animation: fill-in 3s forwards;
+    fill-opacity: 0;
+  }
+  
+  .heartFill svg g{
+    fill: url(#mygradient);
+  }
+  
+  
+
+
+
+  @keyframes fill-in {
+    0% {
+    fill-opacity: 0;
+  }
+    100% {
+    fill-opacity: 1;
+  }
+  }
+
+/*ANIM HEART*/
