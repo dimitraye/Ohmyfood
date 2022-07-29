@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .divValid {
   display: none;
   border: 1px solid purple;
@@ -26,13 +27,11 @@
 }
 
 .partRouge {
-  border: 1px solid red;
   height: 100%;
   width: 100%;
 }
 
 .divTitlePlat {
-  border: 1px solid orangered;
   height: 50%;
   width: 100%;
   padding-left: 2%;
@@ -44,7 +43,6 @@
 }
 
 .divInfoPlat {
-  border: 1px solid blue;
   height: 50%;
   width: 100%;
   display: flex;
@@ -52,14 +50,52 @@
 }
 
 .divDescPlat {
-  border: 1px solid green;
   height: 100%;
   width: 80%;
   padding-left: 2%;
 }
 
 .divPricePlat {
-  border: 1px solid yellow;
   height: 100%;
   width: 20%;
-}/*# sourceMappingURL=menuresto.css.map */
+}
+
+/*TEST affichage fur et à mesure*/
+@-webkit-keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.e {
+  width: 100%;
+  height: 30px;
+  opacity: 0;
+}
+
+.listEntree {
+  -webkit-animation: load 5s 1;
+  animation: load 5s 1;
+}
+
+.listPlat {
+  -webkit-animation: load 5s 1 1s;
+  animation: load 5s 1 1s;
+}
+
+.listDessert {
+  -webkit-animation: load 5s 1 2s;
+  animation: load 5s 1 2s;
+}
+
+/*TEST affichage fur et à mesure*//*# sourceMappingURL=menuresto.css.map */

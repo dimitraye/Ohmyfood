@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*LOADER*/
 .loader {
   position: absolute;
@@ -62,6 +63,7 @@
     visibility: visible;
   }
 }
+/*Affichage des éléments de la page au fur et à mesure*/
 /*Colors*/
 /*GENERAL*/
 a {
@@ -348,4 +350,6 @@ footer .ohmyfoodFooter div:hover {
 
 .divCommander {
   height: 200px;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*--------------------------------------------------------------------------------------------*//*# sourceMappingURL=index.css.map */

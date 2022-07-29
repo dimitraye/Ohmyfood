@@ -36,6 +36,22 @@
     padding-left: 20px;
 }
 
+
+
+.listEntree h2{
+    border-bottom : 3px solid #99E2D0;
+    width: 25%;
+}
+
+.listPlat h2{
+    border-bottom : 3px solid #99E2D0;
+    width: 25%;
+}
+
+.listDessert h2{
+    border-bottom : 3px solid #99E2D0;
+    width: 25%;
+}
 /*_________ divPlat _________*/
 
 /*
