@@ -31,35 +31,6 @@
 */
 /*LOADER*/
 .loader {
-  border: 5px solid;
-  width: 100px;
-  height: 100px;
-  margin-top: 15%;
-  margin-left: 45%;
-  border-radius: 50%;
-  border-color: #99E2D0 transparent transparent;
-  -webkit-animation: spin 3s 3 linear;
-  -moz-animation: spin 3s 3 linear;
-  -ms-animation: spin 3s 3 linear;
-  -o-transition: rotate(3600deg);
-}
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.loader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -69,9 +40,9 @@
   margin: -76px 0 0 -76px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
-  -webkit-animation: spin-loader 1s linear 3 forwards;
-  animation: spin-loader 1s linear 3 forwards;
+  border-top: 16px solid #99E2D0;
+  -webkit-animation: spin-loader 1s linear 1 forwards;
+  animation: spin-loader 1s linear 1 forwards;
   transform: rotate(45deg);
 }
 
@@ -106,8 +77,8 @@
   }
 }
 .blocPage {
-  -webkit-animation: cssAnimation 0s 3s forwards;
-          animation: cssAnimation 0s 3s forwards;
+  -webkit-animation: cssAnimation 0s 1s forwards;
+          animation: cssAnimation 0s 1s forwards;
   visibility: hidden;
 }
 
@@ -180,7 +151,7 @@
 
 /*_________ exploreButton _________*/
 .exploreButton {
-  background-color: purple;
+  background: linear-gradient(0deg, purple, #FF79DA);
   border-radius: 25px;
   height: 50px;
   width: 250px;
