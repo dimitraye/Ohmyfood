@@ -1,3 +1,46 @@
+$greenSpe : #99E2D0;
+
+
+.partRouge{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.divTitlePlat{
+
+    height: 50%;
+    width: 100%;  
+    padding-left: 2%;
+}
+.divTitlePlat h3{
+    font-size: 20px;    
+    margin-top: 0;
+}
+
+.divInfoPlat{
+
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divDescPlat{
+
+    height: 100%;
+    width: 80%;
+    padding-left: 2%;
+}
+
+.divPricePlat{
+
+    height: 100%;
+    width: 20%;
+}
+
+
 .divValid{
     display: none;
     border: 1px solid purple;
@@ -46,6 +89,18 @@
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
       }
+
+      &:hover > .partRouge{
+        border-radius: 20px 0 0 20px;
+        width: 80%;
+        
+      }
+
+      &:hover > .partRouge .divInfoPlat .divDescPlat{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     
 }
 /*---------*/
@@ -92,40 +147,6 @@
 /*---------*/
 
 
-.partRouge{
-    height: 100%;
-    width: 100%;
-}
-
-
-
-.divTitlePlat{
-    height: 50%;
-    width: 100%;  
-    padding-left: 2%;
-}
-.divTitlePlat h3{
-    font-size: 20px;    
-    margin-top: 0;
-}
-
-.divInfoPlat{
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.divDescPlat{
-    height: 100%;
-    width: 80%;
-    padding-left: 2%;
-}
-
-.divPricePlat{
-    height: 100%;
-    width: 20%;
-}
 
 
 
@@ -161,3 +182,22 @@
 
 
 
+.listEntree , .listPlat , .listDessert {
+    h2{
+        font-style: italic;
+        margin-left: 20px;
+        margin-top: 25px;
+        font-size: 18px;
+        padding-bottom: 4px;
+        position: relative;
+      }
+     
+      h2::before {
+        content: '';
+        position: absolute;
+        bottom: 0; left: 0;
+        width: 50px;
+        height: 2px;
+        background-color: $greenSpe;
+      }
+}
