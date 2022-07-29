@@ -1,34 +1,3 @@
-/*
-.progress {
-    &__bar {
-        animation: progress-bar 1s 150ms;
-        .blocPage{
-            display: contents;
-        }
-    }
-}
-@keyframes progress-bar{
-    0% {
-        transform: scaleX(0);
-        opacity: .1;
-    }
-    17% {
-        transform: scaleX(.18);
-    }
-    24% {
-        transform: scaleX(.4);
-    }
-    46% {
-        transform: scaleX(.81);
-    }
-    85%,100% {
-        opacity: 1;
-    }
-    100% {
-        transform: scaleX(1);
-    }
-}
-*/
 /*LOADER*/
 .loader {
   position: absolute;
@@ -94,6 +63,45 @@
   }
 }
 /*Colors*/
+/*GENERAL*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Shrikhand", cursive;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entete {
+  width: 100%;
+  height: 40px;
+}
+
+.blocPage {
+  width: 100%;
+  padding: 0;
+}
+
 /*ACCUEIL.HTML /  MENU*/
 .divHeader {
   height: 40px;
@@ -151,18 +159,30 @@
 
 /*_________ exploreButton _________*/
 .exploreButton {
-  background: linear-gradient(0deg, purple, #FF79DA);
-  border-radius: 25px;
+  border: none;
+  border: 1px solid red;
   height: 50px;
   width: 250px;
   justify-content: center;
   align-items: center;
   display: flex;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+  padding: 0;
+  color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0px 2px 10px 0px #7d7d7d;
+  cursor: pointer;
+  background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
+}
+.exploreButton:hover {
+  box-shadow: 0px 6px 14px 0px #525252;
+  background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
 }
 
 .exploreButton a {
   color: white;
+  border: 1px solid red;
+  margin: 0;
 }
 
 /*INTRODUCTION*/
@@ -302,4 +322,30 @@ footer .ohmyfoodFooter div {
 footer .ohmyfoodFooter div:hover {
   color: #9356DC;
   cursor: pointer;
+}
+
+/*----------------------Menu restaurant------------------------*/
+.divFlecheEntete {
+  margin-left: 0;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.divFlecheEntete a {
+  text-decoration: none;
+}
+
+.divFlecheEntete i {
+  font-size: 20px;
+}
+
+/*_________divSansHeaderFooter_________*/
+.globalSansHeaderFooter {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.divCommander {
+  height: 200px;
 }/*# sourceMappingURL=index.css.map */
