@@ -21,13 +21,76 @@
     margin-left: 3%;
     cursor: pointer;
 
-    &:hover{
-        .divValid{
-            display: block;
-        }
-    }
+    &:hover > .divValid{
+        display: block;
+    
+        opacity: 1;
+        transform-origin: right;
+        animation: progress-bar 1000ms;
+        animation-fill-mode: backwards;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &:hover > .divValid img{
+        display: block;
+        height: 25px;
+        width: 25px;
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+        -webkit-animation: spin 2s linear;
+        -moz-animation: spin 2s linear;
+        animation: spin 2s linear;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
     
 }
+/*---------*/
+@keyframes progress-bar{
+    0% {
+        transform: scaleX(0);
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+    }
+    46% {
+        transform: scaleX(.81);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+  }
+/*---------*/
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+  }
+/*---------*/
+
 
 .partRouge{
     height: 100%;
@@ -95,3 +158,6 @@
     animation: load 5s 1 2s;
   }  
 /*TEST affichage fur et à mesure*/
+
+
+

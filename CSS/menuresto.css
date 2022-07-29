@@ -22,10 +22,84 @@
   margin-left: 3%;
   cursor: pointer;
 }
-.plat:hover .divValid {
+.plat:hover > .divValid {
   display: block;
+  opacity: 1;
+  transform-origin: right;
+  -webkit-animation: progress-bar 1000ms;
+          animation: progress-bar 1000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plat:hover > .divValid img {
+  display: block;
+  height: 25px;
+  width: 25px;
+  filter: brightness(0) invert(1);
+  -webkit-animation: spin 2s linear;
+  animation: spin 2s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
+/*---------*/
+@-webkit-keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+/*---------*/
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*---------*/
 .partRouge {
   height: 100%;
   width: 100%;
