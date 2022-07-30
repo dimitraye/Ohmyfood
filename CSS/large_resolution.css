@@ -1,13 +1,13 @@
 /*DIVLOGO*/
 
-.divLogo{
-    
-}
-
 
 /*Fonctionnement*/
 .fonctionnement h2{
-    margin-left:38%;  
+    border: 1px solid red;
+    width: 15%;
+    padding: 0;
+    margin-left: 40%;
+
 }
 .listChoix{
     width: 60%;
