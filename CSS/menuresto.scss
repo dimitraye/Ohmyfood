@@ -1,6 +1,67 @@
 $greenSpe : #99E2D0;
 
 
+
+/*_________ menu _________*/
+.menu{
+  height: 1280px;
+}
+/*_________ image _________*/
+.divIMG{
+  height: 250px;
+  background-color: grey;
+  position:relative;
+}
+.divIMG img{
+  height: 100%;
+  width: 100%; 
+}
+
+/*_________ resto _________*/
+.resto{
+  height: 1080px;
+  width: 97%;
+  background-color: #f2f2f2;
+  border-radius: 40px 40px 0 0;
+  position: absolute;
+  z-index: 999;
+  margin-top: -40px; 
+}
+
+/*divHEART*/
+.divHeart{
+  margin-right: 50px;
+  padding-top: 25px;
+}
+.divHeart i{
+  font-size: 30px;
+}
+/*_________ title _________*/
+.title h1{
+  padding-left: 20px;
+}
+
+/*_________ Commander _________*/
+.divCommander{
+  height: 190px;
+  display: flex; 
+  background-color: #f2f2f2;
+  padding-top: 50px;
+}
+.divSpace{
+  width: 30%;
+}
+
+footer{
+  background-color: rgba(13, 11, 11, 0.864);
+}
+
+
+
+
+
+
+
 .partRouge{
     height: 100%;
     width: 100%;
