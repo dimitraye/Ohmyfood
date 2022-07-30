@@ -15,20 +15,27 @@
 
 /*Restaurant*/
 .restaurants h2{
-    margin-left:38%;
+    width: 15%;
+    padding: 0;
+    margin-left: 40%;
 }
+
+
 .listResto{
-    width: 90%;
+    width: 80%;
     display: flex;
-    justify-content: space-between ;
     flex-wrap : wrap;
+    justify-content: space-between ;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 120px;
     padding-right: 120px;
+    margin-left: 8%;
+
 }
 .cardRestaurants1{
     width: 100%;
+    margin-bottom: 30px;
 }
 
 
