@@ -1,0 +1,51 @@
+/*Fonctionnement*/
+.fonctionnement h2{
+    width: 15%;
+    padding: 0;
+    margin-left: 40%;
+
+}
+.listChoix{
+    width: 60%;
+    margin-left: 20%;
+}
+
+/*Restaurant*/
+.restaurants h2{
+    width: 15%;
+    padding: 0;
+    margin-left: 40%;
+}
+
+
+.listResto{
+    width: 80%;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: space-between ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-left: 8%;
+    .cardRestaurants1{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+/*Footer*/
+.ohmyfoodFooter{
+    display: flex;
+    justify-content: space-around ;
+    width: 100%;
+    margin-left: 0;
+    .ohmyfoodFooter div{
+        display: flex;
+        align-items: center;  
+    }
+
+}
