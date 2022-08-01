@@ -1,0 +1,37 @@
+/*ENTETE*/
+.divFlecheEntete{
+    width: 3%;
+}
+
+.divLogo{
+    margin-left: 35%;
+}
+
+
+
+/*Resto*/
+.listEntree h2 , .listPlat h2 , .listDessert h2 {
+    width: 15%;
+    margin-left: 40%;
+}
+
+
+/*BOUTTON COMMANDER*/
+.divSpace{
+    width: 35%;
+}
+
+.exploreButton{
+    width: 30%;
+}
+/*FOOTER*/
+.ohmyfoodFooter{
+    display: flex;
+    justify-content: space-around ;
+    width: 100%;
+    margin-left: 0;
+    .ohmyfoodFooter div{
+        display: flex;
+        align-items: center;  
+    }
+}
