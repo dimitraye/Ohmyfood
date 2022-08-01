@@ -1,0 +1,32 @@
+/*Fonctionnement*/
+.fonctionnement h2{
+    padding-left: 35%;
+}
+/*Restaurant*/
+.restaurants h2{
+    margin-left:38%;
+}
+.listResto{
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.cardRestaurants1{
+    width: 100%;
+}
+
+/*Footer*/
+.ohmyfoodFooter{
+    width: 200px;
+    margin-left: 35%;
+    .ohmyfoodFooter div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;   
+    }
+    
+}
+
+
