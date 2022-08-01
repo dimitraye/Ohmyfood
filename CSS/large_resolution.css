@@ -37,10 +37,12 @@
 .ohmyfoodFooter {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin-left: 0;
 }
 .ohmyfoodFooter .ohmyfoodFooter div {
   display: flex;
   align-items: center;
+  margin-top: 100% x;
 }/*# sourceMappingURL=large_resolution.css.map */

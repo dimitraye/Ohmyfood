@@ -19,14 +19,16 @@
 
 /*Footer*/
 .ohmyfoodFooter{
-    width: 200px;
-    margin-left: 35%;
+    display: flex;
+    justify-content: space-around ;
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+
     .ohmyfoodFooter div{
         display: flex;
-        align-items: center;
-        margin-bottom: 10px;   
+        align-items: center;  
     }
-    
 }
 
 
