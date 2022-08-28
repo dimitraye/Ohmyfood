@@ -1,10 +1,5 @@
-/*ENTETE*/
-.divFlecheEntete {
-  width: 3%;
-}
-
-.divLogo {
-  margin-left: 35%;
+.menu {
+  height: 1430px;
 }
 
 /*Resto*/
@@ -13,24 +8,15 @@
   margin-left: 40%;
 }
 
-/*BOUTTON COMMANDER*/
-.divSpace {
-  width: 35%;
-}
-
 .exploreButton {
   width: 30%;
 }
 
-/*FOOTER*/
-.ohmyfoodFooter {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.resto {
+  height: 1180px;
   width: 100%;
-  margin-left: 0;
-}
-.ohmyfoodFooter .ohmyfoodFooter div {
-  display: flex;
-  align-items: center;
+  border-radius: 0;
+  position: relative;
+  z-index: 999;
+  margin-top: 0px;
 }/*# sourceMappingURL=moyenne_resolution_resto.css.map */

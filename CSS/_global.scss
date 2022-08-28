@@ -1,0 +1,126 @@
+
+/*GENERAL*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3,h4,h5{
+    font-family: 'Shrikhand', cursive;
+}
+
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.blocPage{
+    width: 100%;
+    padding: 0;
+}
+
+
+
+/*ANIM HEART*/
+
+#stylesvg {
+    width:0;
+    height:0;
+    position:absolute;
+}
+
+.divHeart svg{
+    height: 25px;
+    width: 25px;
+  }
+  
+  .heartFill{
+    display: none;
+  }
+  
+  .divHeart:hover > .heartEmpty{
+    display: none;
+  }
+
+  .heartFill svg g{
+    fill: url(#mygradient);
+  }
+  
+  .divHeart:hover > .heartFill{
+    display: block;
+  }
+  
+  .divHeart:hover > .heartFill svg g{
+    animation: fill-in 3s forwards;
+    -webkit-animation: fill-in 3s forwards;
+    fill-opacity: 0;
+  }
+  
+  @keyframes fill-in {
+    0% {
+    fill-opacity: 0;
+  }
+    100% {
+    fill-opacity: 1;
+  }
+}
+
+
+/*_________ exploreButton _________*/
+.exploreButton {
+  border: none;
+  height: 50px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 3rem;
+  padding: 0;   
+  color: #fff;
+  font-weight: 900;
+  border-radius: 2rem;
+  box-shadow: 0px 2px 10px 0px #7d7d7d;
+  cursor: pointer;
+  background: linear-gradient(
+    356deg,
+    rgba(155, 89, 220, 1) 0%,
+    rgba(167, 127, 216, 1) 33%,
+    rgba(255, 121, 218, 1) 100%
+  );
+  &:hover {
+    box-shadow: 0px 6px 14px 0px #525252;
+    background: linear-gradient(
+      356deg,
+      lighten(rgba(155, 89, 220, 1), 5%) 0%,
+      lighten(rgba(167, 127, 216, 1), 5%) 33%,
+      lighten(rgba(255, 121, 218, 1), 5%) 100%
+    );
+  }
+}
+
+.exploreButton a{
+    color: $white;
+    margin: 0;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+

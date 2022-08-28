@@ -1,3 +1,9 @@
+@import "colors";
+@import "header";
+@import "footer";
+@import "global";
+ 
+
 /*LOADER*/
 .loader{
     position: absolute;
@@ -7,9 +13,9 @@
     width: 200px;
     height: 200px;
     margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
+    border: 16px solid $greenSpe;
     border-radius: 50%;
-    border-top: 16px solid #99E2D0;
+    border-top: 16px solid $violetSpe;
     -webkit-animation: spin-loader 1s linear 1 forwards;
     animation: spin-loader 1s linear 1 forwards;
     -webkit-transform: rotate(45deg);
@@ -49,87 +55,11 @@
   to   { visibility: visible; }
 }
 
-/*Affichage des éléments de la page au fur et à mesure*/
 
-
-
-
-/*Colors*/
-$blanc : white;
-$gris : #f2f2f2;
-$grey2 : lightgray;
-$darkgrey2 : dimgrey;
-$darkGreySpe : rgba(13, 11, 11, 0.864);
-$violet : purple;
-$rose : #FF79DA;
-$violetSpe : #9356DC;
-$green : green;
-$greenSpe : #99E2D0;
-$hoverChoixColor : #eadafd;
-$noir : black;
-
-
-/*GENERAL*/
-a{
-    text-decoration: none;
-    color: black;
-}
-
-* {
-    box-sizing: border-box;
-  }
-
-*{
-        font-family: 'Roboto', sans-serif;
-}
-
-h1, h2, h3,h4,h5{
-    font-family: 'Shrikhand', cursive;
-}
-
-
-.flexCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexBetween{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-.entete{
+/*_________divSansHeaderFooter_________*/
+.globalSansHeaderFooter{
     width: 100%;
-    height: 40px;
 }
-
-.blocPage{
-    width: 100%;
-    padding: 0;
-}
-
-/*ACCUEIL.HTML /  MENU*/
-.divHeader{
-    height: 40px;
-    display: flex;
-    .divLogo{
-        height: 40px;
-        width: 70%;
-        display: flex;
-        align-items: center;
-    }
-}
-
-.divLogo img{
-    height: 35px;
-    width: 150px;
-}
-
-/*ACCUEIL.HTML /  MENU*/
-
 
 /*DIVLOCATION*/
 .divLocation{
@@ -141,16 +71,21 @@ h1, h2, h3,h4,h5{
     font-size: 15px;
     justify-content: center;
     align-items: center;
+    p {
+        font-weight: 900;
+    }
+
+    i{
+        margin-right: 15px;
+    }
 }
 
-.divLocation i{
-    margin-right: 15px;
-}
+
 /*DIVLOCATION*/
 
 /*INTRODUCTION*/
 .introduction {
-    height: 250px;
+    height: 270px;
     background-color: $gris;
     width: 100%;
     flex-wrap: wrap;
@@ -161,53 +96,24 @@ h1, h2, h3,h4,h5{
     margin-left: 20px;
     margin-right: 20px;
     width: 100%;
-    .reservezPhrase h2{
+    h2{
         margin-left: 20px;
         margin-right: 20px;   
     }
-}
-/*_________ exploreButton _________*/
-.exploreButton {
-  border: none;
-  height: 50px;
-  width: 250px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-bottom: 3rem;
-  padding: 0;   
-  color: #fff;
-  border-radius: 2rem;
-  box-shadow: 0px 2px 10px 0px #7d7d7d;
-  cursor: pointer;
-  background: linear-gradient(
-    356deg,
-    rgba(155, 89, 220, 1) 0%,
-    rgba(167, 127, 216, 1) 33%,
-    rgba(255, 121, 218, 1) 100%
-  );
-  &:hover {
-    box-shadow: 0px 6px 14px 0px #525252;
-    background: linear-gradient(
-      356deg,
-      lighten(rgba(155, 89, 220, 1), 5%) 0%,
-      lighten(rgba(167, 127, 216, 1), 5%) 33%,
-      lighten(rgba(255, 121, 218, 1), 5%) 100%
-    );
-  }
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 
-.exploreButton a{
-    color: white;
-    margin: 0;
-}
 /*INTRODUCTION*/
 
 
 
 /*FONCTIONNEMENT*/
 .fonctionnement{
-    height: 460px ;
+    height: 400px ;
+    padding-left: 5%;
 }
 
 /*_________ listChoix _________*/
@@ -235,48 +141,70 @@ h1, h2, h3,h4,h5{
 .choix:hover .iconFonc{
     color: $violetSpe;
 }
+
+.choix:hover {
+    background-color: $verylightpurple;
+}
+
 .numberFonc{
     width: 25px;
     height: 25px;
     border-radius: 50px;
     background-color: $violetSpe;
-    color : $blanc;
-    margin-left: -5%;
-    text-align: center;
+    color : $white;
+    margin-left: -3%;
     margin-right: 6%;
-    .iconFonc{
-        width: 10%;
-    }
     .space{
         width: 3%;
     }
 }
 
+.iconFonc{
+    width: 10%;
+    color: $verydarkgrey;
+}
+
 .textFonc{
     width: 77%;
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 50px;
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 20px;
 }
 /*FONCTIONNEMENT*/
 
 
 /*RESTAURANTS*/
+
+#firstH2 {
+    display: none;
+}
+
+.listResto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .restaurants{
     display: block;
+    background-color: $gris;
+    padding-top: 20px;
+    height: 1200px;
+    h2 {
+        width: 348px;
+    }
     .cardRestaurants1{
         width: 348px;
         border-radius: 10px;
         margin-bottom: 20px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: $white;
         .cardRestaurantsImage{
             height: 165px;
-            width: 348px;
             border-radius: 10px 10px 0 0;  
         }
         .cardRestaurantsInfos{
             display: flex;
-            width: 348px;
             border-radius: 0 0 10px 10px;
             padding-left: 0px;
             .infoCard{
@@ -287,29 +215,20 @@ h1, h2, h3,h4,h5{
                     margin-bottom: -10px;
                 }
             }
-            /*
-            .divHeart{
-                width: 15%;
-                border-radius: 0 0 10px 0;
-                padding-left: 25px;
-                padding-top: 25px;
-            }
-            .divHeart i{
-                font-size: 25px;   
-            }
-            */
         }
     }
 }
 .cardRestaurantsImage img{
-    height: 165px;
-    width: 348px;
+    height: inherit;
+    width: 100%;
     border-radius: 10px 10px 0 0;
     position:relative;
+    object-fit: cover;
 }
 
 .nouveau{
     font-size: 13px;
+    font-weight: 900;
     background-color: $greenSpe;
     color: $green;
     position: absolute;
@@ -320,112 +239,8 @@ h1, h2, h3,h4,h5{
 }
 /*RESTAURANTS*/
 
-/*FOOTER*/
-footer{
-    background-color: rgba(13, 11, 11, 0.864);
-    margin-bottom: 0;
-    text-decoration-color: $blanc;
-    padding-left: 25px;
-    h2{
-        font-family: 'Shrikhand', cursive;
-        font-size: 20px;
-        color: $blanc;
-    }
-    .ohmyfoodFooter{
-        padding-top: 15px;
-        padding-bottom: 20px;
-        padding-left: 105px;
-    }
-    .ohmyfoodFooter div{
-        color: $blanc;
-        
-    }
-    .ohmyfoodFooter div:hover, a:hover{
-        color: $violetSpe;
-        cursor: pointer;
-    }
-    a{
-        text-decoration: none;
-        color: $blanc;
-    }
-    
-}
- 
-
-
-/*----------------------Menu restaurant------------------------*/
-
-.divFlecheEntete{
-    margin-left: 0;
-    width: 30%;
-    display: flex;
-    align-items: center;
-}
-.divFlecheEntete a{
-    text-decoration: none;  
-}
-.divFlecheEntete i{
-    font-size: 20px;
-}
-
-/*_________divSansHeaderFooter_________*/
-.globalSansHeaderFooter{
-    margin-left: 20px;
-    width: 100%;
-}
-
-
-.divCommander{
-    height: 200px;
-}
-
-
-
 /*--------------------------------------------------------------------------------------------*/
 
 
 
 
-
-/*ANIM HEART*/
-.divHeart svg{
-    height: 25px;
-    width: 25px;
-  }
-  
-  .heartFill{
-    display: none;
-  }
-  
-  .divHeart:hover > .heartEmpty{
-    display: none;
-  }
-  
-  .divHeart:hover > .heartFill{
-    display: block;
-  }
-  
-  .divHeart:hover > .heartFill svg g{
-    animation: fill-in 3s forwards;
-    -webkit-animation: fill-in 3s forwards;
-    fill-opacity: 0;
-  }
-  
-  .heartFill svg g{
-    fill: url(#mygradient);
-  }
-  
-  
-
-
-
-  @keyframes fill-in {
-    0% {
-    fill-opacity: 0;
-  }
-    100% {
-    fill-opacity: 1;
-  }
-  }
-
-/*ANIM HEART*/
