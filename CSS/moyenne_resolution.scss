@@ -3,32 +3,40 @@
     padding-left: 35%;
 }
 /*Restaurant*/
-.restaurants h2{
-    margin-left:38%;
+#firstH2 {
+    display: block;
+    padding-left: 0px;
+    text-align: center;
+    width: auto;
 }
+
 .listResto{
-    width: 90%;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-.cardRestaurants1{
-    width: 100%;
-}
+    padding-left: 0%;
+    padding-right: 0%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    h2{
+        display: none;
+    }
 
-/*Footer*/
-.ohmyfoodFooter{
-    display: flex;
-    justify-content: space-around ;
-    align-items: center;
-    width: 100%;
-    margin-left: 0;
-
-    .ohmyfoodFooter div{
-        display: flex;
-        align-items: center;  
+    a {
+        width: 42%;
     }
 }
 
+.restaurants {
+    height: 675px;
 
+    .cardRestaurants1 {
+        width: 100%;
+    }
+}
+
+.nouveau{
+    margin-left: 31%;
+}

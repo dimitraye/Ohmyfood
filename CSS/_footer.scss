@@ -1,0 +1,48 @@
+/*FOOTER*/
+footer{
+    background-color: rgba(13, 11, 11, 0.864);
+    margin-bottom: 0;
+    text-decoration-color: $white;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    h2{
+        font-family: 'Shrikhand', cursive;
+        font-size: 20px;
+        color: $white;
+    }
+    .fa-solid {
+        width: 25px;
+    }
+    div{
+        color: $white;
+        margin-bottom: 10px;
+        
+    }
+    div:hover, a:hover{
+        color: $violetSpe;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+    
+}
+
+
+/* On screens at least 769px */
+@media screen and (min-width: 769px) {
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-left: 0;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+
+}
