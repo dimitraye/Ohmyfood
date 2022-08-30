@@ -116,7 +116,7 @@
     
         opacity: 1;
         transform-origin: right;
-        animation: progress-bar 1000ms;
+        animation: progress-bar 1s;
         animation-fill-mode: backwards;
         display: flex;
         justify-content: center;
@@ -129,9 +129,9 @@
         width: 25px;
         -webkit-filter: brightness(0) invert(1);
         filter: brightness(0) invert(1);
-        -webkit-animation: spin 2s linear;
-        -moz-animation: spin 2s linear;
-        animation: spin 2s linear;
+        -webkit-animation: spin 1s linear;
+        -moz-animation: spin 1s linear;
+        animation: spin 1s linear;
         -webkit-animation-fill-mode: forwards;
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
@@ -253,4 +253,35 @@
   padding-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+
+
+
+/*Media queries*/
+
+/* On screens that are between 993px and 1152px */
+
+@media screen and (max-width: 768px) and (min-width: 659px) {
+  .resto{
+      width: 98%;
+  }
+}
+
+@media screen and (max-width: 658px) and (min-width: 547px) {
+  .resto{
+      width: 97.5%;
+  }
+}
+
+@media screen and (max-width: 546px) and (min-width: 470px) {
+  .resto{
+      width: 97%;
+  }
+}
+
+@media screen and (max-width: 469px) and (min-width: 414px) {
+  .resto{
+      width: 96.5%;
+  }
 }
