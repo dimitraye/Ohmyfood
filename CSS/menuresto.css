@@ -98,7 +98,11 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -118,6 +122,7 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
+/* ---------------------------------------------- ANIMATIONS ----------------------------------------------*/
 /*ANIM HEART*/
 #stylesvg {
   width: 0;
@@ -169,6 +174,7 @@ h1, h2, h3, h4, h5 {
     fill-opacity: 1;
   }
 }
+/* ---------------------------------------------- FIN ----------------------------------------------*/
 /*_________ exploreButton _________*/
 .exploreButton {
   border: none;
@@ -188,7 +194,12 @@ h1, h2, h3, h4, h5 {
 }
 .exploreButton:hover {
   box-shadow: 0px 6px 14px 0px #525252;
-  background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
+  -webkit-animation-name: lighten;
+          animation-name: lighten;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .exploreButton a {
@@ -196,6 +207,25 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+@-webkit-keyframes lighten {
+  from {
+    background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
+  }
+  to {
+    box-shadow: 0px 6px 14px 0px #525252;
+    background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
+  }
+}
+
+@keyframes lighten {
+  from {
+    background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
+  }
+  to {
+    box-shadow: 0px 6px 14px 0px #525252;
+    background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
+  }
+}
 /*--------------------------------------------------------------------------------------------*/
 /*_________ menu _________*/
 .menu {
@@ -397,6 +427,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 /*---------*/
+/* ---------------------------------------------- ANIMATIONS ----------------------------------------------*/
 /*TEST affichage fur et à mesure*/
 @-webkit-keyframes load {
   0% {
@@ -436,14 +467,19 @@ h1, h2, h3, h4, h5 {
 }
 
 /*TEST affichage fur et à mesure*/
-.listEntree h2, .listPlat h2, .listDessert h2 {
+/* ---------------------------------------------- FIN ----------------------------------------------*/
+.listEntree h2,
+.listPlat h2,
+.listDessert h2 {
   margin-left: 20px;
   margin-top: 25px;
   font-size: 18px;
   padding-bottom: 4px;
   position: relative;
 }
-.listEntree h2::before, .listPlat h2::before, .listDessert h2::before {
+.listEntree h2::before,
+.listPlat h2::before,
+.listDessert h2::before {
   content: "";
   position: absolute;
   bottom: 0;
