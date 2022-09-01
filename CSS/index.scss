@@ -2,10 +2,11 @@
 @import "header";
 @import "footer";
 @import "global";
- 
 
+/* ---------------------------------------------- ANIMATIONS ----------------------------------------------*/
 /*LOADER*/
-.loader{
+//Propriétés de l'animation
+.loader {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -19,50 +20,130 @@
     -webkit-animation: spin-loader 1s linear 1 forwards;
     animation: spin-loader 1s linear 1 forwards;
     -webkit-transform: rotate(45deg);
-    transform:  rotate(45deg);
-  }
-  
-  @-webkit-keyframes spin-loader {
-    0% { -webkit-transform: rotate(0deg); }
-    50%     { -webkit-transform: rotate(180deg); }
+    transform: rotate(45deg);
+}
+
+//Etapes (KeyFrame)
+@-ms-keyframes spin-loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+
     99.99% {
-      -webkit-transform: rotate(360deg);
-      opacity: 1;
+        -webkit-transform: rotate(360deg);
+        opacity: 1;
     }
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  @keyframes spin-loader {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(180deg); }
+}
+
+@-moz-keyframes spin-loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+
     99.99% {
-      transform: rotate(360deg);
-      opacity: 1;
+        -webkit-transform: rotate(360deg);
+        opacity: 1;
     }
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
+
+@-webkit-keyframes spin-loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+
+    99.99% {
+        -webkit-transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes spin-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    99.99% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ---------------------------------------------- FIN ----------------------------------------------*/
+
+/* ---------------------------------------------- ANIMATIONS ----------------------------------------------*/
+//Propriétés de l'animation
 
 .blocPage {
-  animation: cssAnimation 0s 1s forwards;
-  visibility: hidden;
+    animation: cssAnimation 0s 1s forwards;
+    visibility: hidden;
+}
+
+@-ms-keyframes cssAnimation {
+    to {
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes cssAnimation {
+    to {
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes cssAnimation {
+    to {
+        visibility: visible;
+    }
 }
 
 @keyframes cssAnimation {
-  to   { visibility: visible; }
+    to {
+        visibility: visible;
+    }
 }
+
+/* ---------------------------------------------- FIN ----------------------------------------------*/
 
 
 /*_________divSansHeaderFooter_________*/
-.globalSansHeaderFooter{
+.globalSansHeaderFooter {
     width: 100%;
 }
 
 /*DIVLOCATION*/
-.divLocation{
+.divLocation {
     border-top: 3px solid $darkgrey2;
     background-color: $grey2;
     height: 50px;
@@ -71,11 +152,12 @@
     font-size: 15px;
     justify-content: center;
     align-items: center;
+
     p {
         font-weight: 900;
     }
 
-    i{
+    i {
         margin-right: 15px;
     }
 }
@@ -90,16 +172,19 @@
     width: 100%;
     flex-wrap: wrap;
 }
+
 /*_________ reservezPhrase _________*/
 .reservezPhrase {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
     width: 100%;
-    h2{
+
+    h2 {
         margin-left: 20px;
-        margin-right: 20px;   
+        margin-right: 20px;
     }
+
     p {
         font-size: 20px;
         font-weight: bold;
@@ -111,34 +196,37 @@
 
 
 /*FONCTIONNEMENT*/
-.fonctionnement{
-    height: 400px ;
+.fonctionnement {
+    height: 400px;
     padding-left: 5%;
 }
 
 /*_________ listChoix _________*/
-.listChoix{
-    width: 95%; 
-    .choix{
+.listChoix {
+    width: 95%;
+
+    .choix {
         width: 100%;
         height: 80px;
         background-color: $gris;
         border-radius: 25px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        position:relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        position: relative;
         z-index: 0;
         margin-bottom: 20px;
         align-items: center;
-        .choix i{
+
+        .choix i {
             color: grey;
         }
-        .choix:hover{
+
+        .choix:hover {
             background-color: $hoverChoixColor;
         }
-    }  
+    }
 }
 
-.choix:hover .iconFonc{
+.choix:hover .iconFonc {
     color: $violetSpe;
 }
 
@@ -146,30 +234,32 @@
     background-color: $verylightpurple;
 }
 
-.numberFonc{
+.numberFonc {
     width: 25px;
     height: 25px;
     border-radius: 50px;
     background-color: $violetSpe;
-    color : $white;
+    color: $white;
     margin-left: -3%;
     margin-right: 6%;
-    .space{
+
+    .space {
         width: 3%;
     }
 }
 
-.iconFonc{
+.iconFonc {
     width: 10%;
     color: $verydarkgrey;
 }
 
-.textFonc{
+.textFonc {
     width: 77%;
     font-weight: 900;
     font-size: 20px;
     margin-left: 20px;
 }
+
 /*FONCTIONNEMENT*/
 
 
@@ -185,48 +275,55 @@
     flex-direction: column;
 }
 
-.restaurants{
+.restaurants {
     display: block;
     background-color: $gris;
     padding-top: 20px;
     height: 1200px;
+
     h2 {
         width: 348px;
     }
-    .cardRestaurants1{
+
+    .cardRestaurants1 {
         width: 348px;
         border-radius: 10px;
         margin-bottom: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         background-color: $white;
-        .cardRestaurantsImage{
+
+        .cardRestaurantsImage {
             height: 165px;
-            border-radius: 10px 10px 0 0;  
+            border-radius: 10px 10px 0 0;
         }
-        .cardRestaurantsInfos{
+
+        .cardRestaurantsInfos {
             display: flex;
             border-radius: 0 0 10px 10px;
             padding-left: 0px;
-            .infoCard{
+
+            .infoCard {
                 width: 85%;
                 padding-bottom: 5px;
                 padding-left: 10px;
-                .p1{
+
+                .p1 {
                     margin-bottom: -10px;
                 }
             }
         }
     }
 }
-.cardRestaurantsImage img{
+
+.cardRestaurantsImage img {
     height: inherit;
     width: 100%;
     border-radius: 10px 10px 0 0;
-    position:relative;
+    position: relative;
     object-fit: cover;
 }
 
-.nouveau{
+.nouveau {
     font-size: 13px;
     font-weight: 900;
     background-color: $greenSpe;
@@ -237,6 +334,7 @@
     padding: 5px;
     border-radius: 2px;
 }
+
 /*RESTAURANTS*/
 
 /*--------------------------------------------------------------------------------------------*/
