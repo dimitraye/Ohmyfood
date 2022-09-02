@@ -320,8 +320,12 @@ h5 {
 /*INTRODUCTION*/
 /*FONCTIONNEMENT*/
 .fonctionnement {
-  height: 400px;
+  height: 465px;
   padding-left: 5%;
+  padding-top: 30px;
+}
+.fonctionnement h2 {
+  margin-bottom: 28px;
 }
 
 /*_________ listChoix _________*/
@@ -376,7 +380,7 @@ h5 {
 .textFonc {
   width: 77%;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 14px;
   margin-left: 20px;
 }
 
@@ -390,13 +394,14 @@ h5 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 10px;
 }
 
 .restaurants {
   display: block;
   background-color: #f2f2f2;
   padding-top: 20px;
-  height: 1200px;
+  height: 1160px;
 }
 .restaurants h2 {
   width: 348px;
@@ -422,8 +427,14 @@ h5 {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-.restaurants .cardRestaurants1 .cardRestaurantsInfos .infoCard .p1 {
-  margin-bottom: -10px;
+.restaurants .cardRestaurants1 .cardRestaurantsInfos h3 {
+  margin-bottom: 1px;
+  margin-top: 12px;
+  font-size: 15px;
+}
+.restaurants .cardRestaurants1 .cardRestaurantsInfos p {
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .cardRestaurantsImage img {
