@@ -190,15 +190,11 @@ h5 {
   box-shadow: 0px 2px 10px 0px #7d7d7d;
   cursor: pointer;
   background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
+  transition: 0.3s;
 }
 .exploreButton:hover {
   box-shadow: 0px 6px 14px 0px #525252;
-  -webkit-animation-name: lighten;
-          animation-name: lighten;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
 }
 
 .exploreButton a {
@@ -206,25 +202,6 @@ h5 {
   margin: 0;
 }
 
-@-webkit-keyframes lighten {
-  from {
-    background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
-  }
-  to {
-    box-shadow: 0px 6px 14px 0px #525252;
-    background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
-  }
-}
-
-@keyframes lighten {
-  from {
-    background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
-  }
-  to {
-    box-shadow: 0px 6px 14px 0px #525252;
-    background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
-  }
-}
 /*--------------------------------------------------------------------------------------------*/
 /* ---------------------------------------------- ANIMATIONS ----------------------------------------------*/
 /*LOADER*/
@@ -243,21 +220,7 @@ h5 {
   animation: spin-loader 1s linear 1 forwards;
   transform: rotate(45deg);
 }
-@-webkit-keyframes spin-loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-  }
-  99.99% {
-    -webkit-transform: rotate(360deg);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
 @keyframes spin-loader {
   0% {
     transform: rotate(0deg);
@@ -273,19 +236,35 @@ h5 {
     opacity: 0;
   }
 }
+@-webkit-keyframes spin-loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  99.99% {
+    -webkit-transform: rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* ---------------------------------------------- FIN ----------------------------------------------*/
 /* ---------------------------------------------- ANIMATIONS ----------------------------------------------*/
 .blocPage {
-  -webkit-animation: cssAnimation 0s 1s forwards;
-          animation: cssAnimation 0s 1s forwards;
+  -webkit-animation: displayPage 0s 1s forwards;
+          animation: displayPage 0s 1s forwards;
   visibility: hidden;
 }
-@-webkit-keyframes cssAnimation {
+
+@keyframes displayPage {
   to {
     visibility: visible;
   }
 }
-@keyframes cssAnimation {
+@-webkit-keyframes displayPage {
   to {
     visibility: visible;
   }
@@ -360,6 +339,7 @@ h5 {
   z-index: 0;
   margin-bottom: 20px;
   align-items: center;
+  transition: 0.3s;
 }
 .listChoix .choix .choix i {
   color: grey;
