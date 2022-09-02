@@ -191,15 +191,11 @@ h5 {
   box-shadow: 0px 2px 10px 0px #7d7d7d;
   cursor: pointer;
   background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
+  transition: 0.3s;
 }
 .exploreButton:hover {
   box-shadow: 0px 6px 14px 0px #525252;
-  -webkit-animation-name: lighten;
-          animation-name: lighten;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
 }
 
 .exploreButton a {
@@ -207,25 +203,6 @@ h5 {
   margin: 0;
 }
 
-@-webkit-keyframes lighten {
-  from {
-    background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
-  }
-  to {
-    box-shadow: 0px 6px 14px 0px #525252;
-    background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
-  }
-}
-
-@keyframes lighten {
-  from {
-    background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
-  }
-  to {
-    box-shadow: 0px 6px 14px 0px #525252;
-    background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
-  }
-}
 /*--------------------------------------------------------------------------------------------*/
 /*_________ menu _________*/
 .menu {
@@ -410,14 +387,6 @@ h5 {
   }
 }
 /*---------*/
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -426,47 +395,58 @@ h5 {
     transform: rotate(360deg);
   }
 }
-/*---------*/
-/* ---------------------------------------------- ANIMATIONS ----------------------------------------------*/
-/*TEST affichage fur et à mesure*/
-@-webkit-keyframes load {
-  0% {
-    opacity: 0;
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
   }
-  100% {
-    opacity: 1;
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
+/*---------*/
+/* ---------------------------------------------- ANIMATIONS ----------------------------------------------*/
+/*affichage du menu au fur et à mesure*/
 @keyframes load {
   0% {
     opacity: 0;
   }
+  99% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
 }
-.e {
-  width: 100%;
-  height: 30px;
-  opacity: 0;
+@-webkit-keyframes load {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 .listEntree {
-  -webkit-animation: load 5s 1;
-  animation: load 5s 1;
+  -moz-animation-name: load 0.5s ease-in 1;
+  -webkit-animation: load 0.5s ease-in 1;
+  animation: load 0.5s ease-in 1;
 }
 
 .listPlat {
-  -webkit-animation: load 5s 1 1s;
-  animation: load 5s 1 1s;
+  -moz-animation-name: load 1s ease-in 1;
+  -webkit-animation: load 1s ease-in 1;
+  animation: load 1s ease-in 1;
 }
 
 .listDessert {
-  -webkit-animation: load 5s 1 2s;
-  animation: load 5s 1 2s;
+  -moz-animation-name: load 1.5s ease-in 1;
+  -webkit-animation: load 1.5s ease-in 1;
+  animation: load 1.5s ease-in 1;
 }
 
-/*TEST affichage fur et à mesure*/
+/*affichage du menu au fur et à mesure*/
 /* ---------------------------------------------- FIN ----------------------------------------------*/
 .listEntree h2,
 .listPlat h2,
@@ -497,22 +477,25 @@ h5 {
 }
 
 /*Media queries*/
-/* On screens that are between 993px and 1152px */
+/* On screens that are between 659px and 768px */
 @media screen and (max-width: 768px) and (min-width: 659px) {
   .resto {
     width: 98%;
   }
 }
+/* On screens that are between 547px and 658px */
 @media screen and (max-width: 658px) and (min-width: 547px) {
   .resto {
     width: 97.5%;
   }
 }
+/* On screens that are between 470px and 546px */
 @media screen and (max-width: 546px) and (min-width: 470px) {
   .resto {
     width: 97%;
   }
 }
+/* On screens that are between 414px and 469px */
 @media screen and (max-width: 469px) and (min-width: 414px) {
   .resto {
     width: 96.5%;

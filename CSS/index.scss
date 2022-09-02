@@ -24,6 +24,25 @@
 }
 
 //Etapes (KeyFrame)
+@keyframes spin-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    99.99% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @-ms-keyframes spin-loader {
     0% {
         -webkit-transform: rotate(0deg);
@@ -81,24 +100,6 @@
     }
 }
 
-@keyframes spin-loader {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(180deg);
-    }
-
-    99.99% {
-        transform: rotate(360deg);
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
 
 /* ---------------------------------------------- FIN ----------------------------------------------*/
 
@@ -106,33 +107,34 @@
 //Propriétés de l'animation
 
 .blocPage {
-    animation: cssAnimation 0s 1s forwards;
+    animation: displayPage 0s 1s forwards;
     visibility: hidden;
 }
 
-@-ms-keyframes cssAnimation {
+@keyframes displayPage {
     to {
         visibility: visible;
     }
 }
 
-@-moz-keyframes cssAnimation {
+@-ms-keyframes displayPage {
     to {
         visibility: visible;
     }
 }
 
-@-webkit-keyframes cssAnimation {
+@-moz-keyframes displayPage {
     to {
         visibility: visible;
     }
 }
 
-@keyframes cssAnimation {
+@-webkit-keyframes displayPage {
     to {
         visibility: visible;
     }
 }
+
 
 /* ---------------------------------------------- FIN ----------------------------------------------*/
 
@@ -215,6 +217,7 @@
         z-index: 0;
         margin-bottom: 20px;
         align-items: center;
+        transition: 0.3s ;
 
         .choix i {
             color: grey;
