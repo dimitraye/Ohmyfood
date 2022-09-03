@@ -62,7 +62,8 @@ footer div {
   color: white;
   margin-bottom: 10px;
 }
-footer div:hover, footer a:hover {
+footer div:hover,
+footer a:hover {
   color: #9356DC;
   cursor: pointer;
 }

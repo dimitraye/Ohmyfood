@@ -3,7 +3,9 @@
 }
 
 /*Resto*/
-.listEntree h2, .listPlat h2, .listDessert h2 {
+.listEntree h2,
+.listPlat h2,
+.listDessert h2 {
   width: 15%;
   margin-left: 40%;
 }

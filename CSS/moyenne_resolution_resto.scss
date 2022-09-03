@@ -1,15 +1,16 @@
-
-.menu{
+.menu {
     height: 1430px;
-  }
+}
 
 /*Resto*/
-.listEntree h2 , .listPlat h2 , .listDessert h2 {
+.listEntree h2,
+.listPlat h2,
+.listDessert h2 {
     width: 15%;
     margin-left: 40%;
 }
 
-.exploreButton{
+.exploreButton {
     width: 30%;
 }
 
@@ -21,4 +22,3 @@
     z-index: 999;
     margin-top: 0px;
 }
-
