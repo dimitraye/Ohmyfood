@@ -256,20 +256,34 @@
   }
 }
 
+@-moz-keyframes load {
+  0% {
+    -moz-opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .listEntree {
-  -moz-animation-name: load 0.5s ease-in 1;
+  -moz-animation: load 0.5s ease-in 1;
   -webkit-animation: load 0.5s ease-in 1;
   animation: load 0.5s ease-in 1;
 }
 
 .listPlat {
-  -moz-animation-name: load 1s ease-in 1;
+  -moz-animation: load 1s ease-in 1;
   -webkit-animation: load 1s ease-in 1;
   animation: load 1s ease-in 1;
 }
 
 .listDessert {
-  -moz-animation-name: load 1.5s ease-in 1;
+  -moz-animation: load 1.5s ease-in 1;
   -webkit-animation: load 1.5s ease-in 1;
   animation: load 1.5s ease-in 1;
 }
