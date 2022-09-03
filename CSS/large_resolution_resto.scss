@@ -1,7 +1,5 @@
-
-
 /*TITRE*/
-.divPlat{  
+.divPlat {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -12,9 +10,12 @@
 }
 
 /*TITRES MENU*/
-.listEntree h2 , .listPlat h2 , .listDessert h2{
+.listEntree h2,
+.listPlat h2,
+.listDessert h2 {
     margin-left: 15px;
 }
+
 /*CHOIX MENUS*/
 
 
@@ -30,7 +31,7 @@
     width: 30%;
 }
 
-.exploreButton{
+.exploreButton {
     margin-top: 50px;
     width: 30%;
 }

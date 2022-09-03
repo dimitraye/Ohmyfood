@@ -4,23 +4,24 @@
     height: 265px;
     padding-left: 0;
 }
-.fonctionnement h2{
+
+.fonctionnement h2 {
     width: 15%;
     padding: 0;
     margin-left: 40%;
 }
 
-.listChoix{
+.listChoix {
     display: flex;
     justify-content: space-around;
     width: 100%;
+
     .choix {
         margin-left: 20px;
         margin-right: 20px;
-    }  
+    }
 }
 
-.listResto{
+.listResto {
     margin-left: 1%;
 }
-
