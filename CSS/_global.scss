@@ -105,19 +105,21 @@ h5 {
   border-radius: 2rem;
   box-shadow: 0px 2px 10px 0px #7d7d7d;
   cursor: pointer;
-  transition: box-shadow 2s;
-  background: linear-gradient(356deg,
-      rgba(155, 89, 220, 1) 0%,
-      rgba(167, 127, 216, 1) 33%,
-      rgba(255, 121, 218, 1) 100%);
+  transition: 0.5s background-position ease-in-out;
+  background-image: linear-gradient(356deg,
+      $violetSpe 0%,
+      $violetLight 33%,
+      $rose 100%,
+      lighten($violetSpe, 5%) 0%,
+      lighten($violetLight, 5%) 33%,
+      lighten($rose, 5%) 100%);
+  background-size: 200%;
+  background-position: right;
 
 
   &:hover {
     box-shadow: 0px 6px 14px 0px #525252;
-    background: linear-gradient(356deg,
-        lighten(rgba(155, 89, 220, 1), 5%) 0%,
-        lighten(rgba(167, 127, 216, 1), 5%) 33%,
-        lighten(rgba(255, 121, 218, 1), 5%) 100%);
+    background-position: left;
   }
 }
 
